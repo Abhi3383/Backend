@@ -7,6 +7,9 @@ void bubbleSort()
 void quickSort()
 {
 }
+void mergeSort()
+{
+}
 
 int main()
 {
