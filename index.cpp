@@ -1,10 +1,15 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
- void bubbleSort(){
+void bubbleSort()
+{
+}
+void quickSort()
+{
+}
 
- }
-int main(){
-    cout<<"hello world";
-    cout<<"hello mern stack";
+int main()
+{
+    cout << "hello world";
+    cout << "hello mern stack";
 }
