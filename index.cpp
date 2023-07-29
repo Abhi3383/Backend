@@ -11,6 +11,10 @@ void mergeSort()
 {
 }
 
+void insertionSort()
+{
+}
+
 int main()
 {
     cout << "hello world";
