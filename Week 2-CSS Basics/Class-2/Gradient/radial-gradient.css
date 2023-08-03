@@ -1,0 +1,14 @@
+.box1 {
+  border: 1px solid black;
+  margin: 10px;
+  height: 300px;
+  width: 300px;
+  background-image: radial-gradient(circle,green,yellow,red);
+  background-image: radial-gradient(yellow 5%,orange 10%,red 50%);
+}
+
+/*
+Different methods of transitioning to radial gradient are same
+as linear Gradient so check linear-gradient.css 
+We can also change shape in radial gradient
+*/

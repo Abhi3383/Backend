@@ -1,0 +1,26 @@
+div{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    border: 1px solid black;
+}
+
+.translated{
+    transform: perspective(10px) translateZ(-10px);
+}
+
+/*
+To work on Z-axis we have to start perspective
+perspective(10px) -> by writing this we are activating Z-axis.
+-10 mai small isliye hua kyunki it is going away from our eyes
+*/
+
+.scaled{
+    margin-left: 200px;
+    transform: perspective(350px) scaleZ(6) rotateX(45deg) rotateY(30deg);
+}
+
+/*
+object kein peeche sein grow hon rha hai toh woh huma nhi dikhega.
+to see the change we have to rotate it
+*/

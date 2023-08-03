@@ -1,0 +1,19 @@
+#b1{
+    text-shadow: 3px 3px red;
+}
+
+/* To make as shadow blur */
+#b2{
+    text-shadow: 3px 3px 3px red;
+}
+
+/*
+1st 3px Shows -> Horizontal 
+2nd 3px Shows -> vertical
+3rd 3px Shows -> Blur
+*/
+
+/* To create multiple shadows*/
+#b3{
+    text-shadow: 3px 3px 3px red, 50px 50px 5px blue;
+}

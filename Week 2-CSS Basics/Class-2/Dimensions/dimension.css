@@ -1,0 +1,25 @@
+.box1 {
+  max-height: 100px;
+  border: 1px solid black;
+  overflow: scroll;
+}
+/*
+after setting max-height and max-width it means we have setted a limit,
+till it it smaller than max-width and max-height everything is fine if 
+we try to insert more after it then it will overflow.
+The max-height CSS property sets the maximum height of an element. 
+It prevents the used value of the height property from becoming larger 
+than the value specified for max-height.
+*/
+
+.box2 {
+  margin: 10px;
+  min-height: 100px;
+  border: 1px solid black;
+}
+
+/*
+If we our content size is less than min-height then the block height
+will remain same. If content is more the box height then the box will
+ grow automatically.
+*/
