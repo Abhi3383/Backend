@@ -6,8 +6,21 @@ div {
   border: 2px solid black;
 }
 
-#box3 {
+#box1 {
   position: relative;
-  top: 100px;
+  bottom: 50px;
+}
+#box2 {
+  position: relative;
   left: 50px;
 }
+#box3 {
+  position: relative;
+  top: 50px;
+}
+#box4 {
+  position: relative;
+  right: 50px;
+}
+
+/* relative to its normal position */
