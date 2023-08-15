@@ -1,0 +1,55 @@
+.container {
+  height: 700px;
+  width: 600px;
+
+  border: 1px solid red;
+  background-color: yellow;
+  display: grid;
+  grid-gap: 10px;
+  /* grid-auto-rows: minmax(100px, auto); */
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 100px 100px;
+
+  /* justify content */
+  /* 
+    justify-content: end;
+    justify-content: start;
+    justify-content: space-around;
+    justify-content: space-between;
+    justify-content: center; 
+    */
+
+  /* align-items: start; */
+  /* align-items: end; */
+  /* align-items: baseline; */
+  /* align-items: stretch; */
+
+  /* align-content : decides the gap b/w the rows */
+  /* align-content: space-between; */
+  /* align-content: space-evenly; */
+
+  /* justify-content: center; */
+  /* align-content: center; */
+  /* it is a combination of justiy-content and align-content  */
+  /* place-content: center; */
+
+  /* justify-item: center; */
+  /* align-itemt: center; */
+  /* it is a combination of justiy-item and align-item  */
+  place-items: center;
+}
+
+.box {
+  border: 1px solid red;
+  background-color: aqua;
+}
+
+#header {
+  /* justify-self: start; */
+  /* justify-self: end; */
+  /* justify-self: center; */
+
+  /* align-self: center; */
+  /* align-self: stretch; */
+  /* align-self: baseline; */
+}
