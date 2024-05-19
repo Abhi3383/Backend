@@ -9,22 +9,26 @@
 // BigInt
 // Symbol
 
-// let age = 22; 
-// let firstName = "harshit";
+let ages = 22; 
+let firstName = "harshit";
 
-// // console.log(typeof age);
+console.log(typeof ages);
 
-// // 22 -> "22"
-// // convert number to string. 
-// age = age + "";
-// console.log(typeof(age)); "22"
+// 22 -> "22"
+// convert number to string. 
+ages = ages + "";
+console.log(typeof(ages)); 
 
 
-// // convert string to number. 
+// convert string to number. 
 
-// let myStr = +"34";
-// console.log(typeof myStr);
+let myStr = +"34";
+console.log(typeof myStr);
 
-// let age = "18";
-// age = Number(age);
-// console.log(typeof age);
+let age = "18";
+age = Number(age); // typecasting
+console.log(typeof age);
+
+let aged = 18;
+aged = String(aged); // typecasting
+console.log(typeof aged);

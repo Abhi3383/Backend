@@ -1,24 +1,24 @@
-// intro to arrays 
-// reference type 
+// intro to arrays
+// reference type
 // how to create arrays
 
-// ordered collection of items 
+// ordered collection of items
+let fruit = ["apple", "mango", "grapes"];
+let numbers = [1, 2, 3, 4];
+let mixed = [1, 2, 2.3, "string", null, undefined];
+console.log(fruit);
+console.log(fruit[2]);
+console.log(fruit[3]);
+console.log(mixed);
+console.log(numbers);
 
-// let fruits = ["apple", "mango", "grapes"];
-// let numbers = [1,2,3,4];
-// let mixed = [1,2,2.3, "string", null, undefined];
-// console.log(mixed);
-// console.log(numbers);
-// console.log(fruits[2]);
+// "fruits" is both an array and on object
 let fruits = ["apple", "mango", "grapes"];
 let obj = {}; // object literal
-// console.log(fruits);
-// fruits[1] = "banana";
-// console.log(fruits);
+console.log(fruits);
+fruits[1] = "banana";
+console.log(fruits);
 console.log(typeof fruits);
 console.log(typeof obj);
 console.log(Array.isArray(fruits));
 console.log(Array.isArray(obj));
-
-
-// array indexing 
