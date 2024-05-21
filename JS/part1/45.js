@@ -1,19 +1,19 @@
-// function expression 
+// function expression
+
 // function singHappyBirthday(){
 //     console.log("happy birthday to you ......");
 // }
-
 const singHappyBirthday = function(){
     console.log("happy birthday to you ......");
 }
 
-// singHappyBirthday();
+singHappyBirthday();
 
 const sumThreeNumbers = function(number1, number2, number3){
     return number1 + number2 + number3;
 }
 const ans = sumThreeNumbers(2,3,4);
-// console.log(ans);
+console.log(ans);
 
 
 // function isEven(number){
@@ -22,7 +22,7 @@ const ans = sumThreeNumbers(2,3,4);
 const isEven = function(number){
     return number % 2 === 0;
 }
-// console.log(isEven(2));
+console.log(isEven(2));
 
 const firstChar = function(anyString){
     return anyString[0];
@@ -36,3 +36,5 @@ const findTarget = function(array, target){
     }
     return -1;
 }
+const myArray = [1, 3, 8, 90];
+console.log(findTarget(myArray,3))

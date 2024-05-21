@@ -1,12 +1,12 @@
 // some method 
 
-const numbers = [3,5,11,9];
+const numbers = [3,2,11,9];
 
 // kya ek bhi number esa hai jo even hai 
 // true 
 
-// const ans = numbers.some((number)=>number%2===0);
-// console.log(ans);
+const ans2 = numbers.some((number)=>number%2===0);
+console.log(ans2);
 
 const userCart = [
     {productId: 1, productName: "mobile", price: 12000},

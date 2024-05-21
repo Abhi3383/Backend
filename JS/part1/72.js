@@ -1,7 +1,14 @@
+// console.log(this);
+// will not work in windows
 // console.log(window);
-// "use strict";
-// function myFunc(){
+// console.log(window==this);
+function myFunc(){
     
-//     console.log(this);
-// }
-// myFunc();
+    console.log(this);
+}
+"use strict";
+function myFunc2(){
+
+    console.log(this);
+}
+myFunc2();

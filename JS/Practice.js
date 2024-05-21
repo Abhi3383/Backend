@@ -1,10 +1,5 @@
-let hello = function world() {
-  console.log("Hello world");
-};
+let hell = [{ radhe: "rahde" }, { jai: "ho" }];
 
-console.log(hello());
-
-let a = [1, 2, 3, 4];
-
-let b = a.map((element) => ({ value: element }));
-console.log(b);
+let [{ radhe:var1 }, { jai:var2 }] = hell;
+console.log(var1); // Output: "rahde"
+console.log(var2);   // Output: "ho"

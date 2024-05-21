@@ -1,7 +1,6 @@
-// sort method 
-// ASCII TABLE 
+// sort method
+// ASCII TABLE
 //char : ascii value
-
 
 // '0' : 48
 // '1' : 49
@@ -14,7 +13,6 @@
 // '8' : 56
 // '9' : 57
 
-
 // ':' : 58
 // ';' : 59
 // '<' : 60
@@ -22,7 +20,6 @@
 // '>' : 62
 // '?' : 63
 // '@' : 64
-
 
 // 'A' : 65
 // 'B' : 66
@@ -51,16 +48,12 @@
 // 'Y' : 89
 // 'Z' : 90
 
-
-
 // '[' : 91
 // '\' : 92
 // ']' : 93
 // '^' : 94
 // '_' : 95
 // '`' : 96
-
-
 
 // 'a' : 97
 // 'b' : 98
@@ -92,67 +85,92 @@
 // '|' : 124
 // '}' : 125
 
-
-// sort  
+// sort
 
 // 5,9,1200, 400, 3000
 // 5, 9, 400, 1200, 3000 (expected)
 
-// ["5", "9", "1210", "410", "3000"] 
+// ["5", "9", "1210", "410", "3000"]
 // [53, 57, 49, 52, 51]
 
-// const userNames = ['harshit', 'abcd', 'mohit', 'nitish', 'aabc', 'ABC', 'Harshit'];
-// userNames.sort();
-// console.log(userNames);
+const userNames = [
+  "harshit",
+  "abcd",
+  "mohit",
+  "nitish",
+  "aabc",
+  "ABC",
+  "Harshit",
+];
+// it will modify the original array
+userNames.sort();
+console.log(userNames);
 
-// const numbers = [5,9,1200, 410, 3000];
-// numbers.sort((a,b)=>{
-//     return b-a;
-// });
-// numbers.sort((a,b)=>a-b);
-// console.log(numbers);
-
-// 1200,410 
+// 1200,410
 // a-b ---> 790
 // a-b ---> postive (greater than 0) ---> b, a
 // 410 , 1200
-
 // a-b ---> negative ----> a,b
-// 5, 9 ---> -4 
-// price lowToHigh HighToLow 
+// 5, 9 ---> -4
+// price lowToHigh HighToLow
+
+// If difference is positive then we will place the later value first
+// and vice versa
+// if a-b > 0 then first "b" will come then "a"
+// if a-b < 0 then first "a" will come then "b"
+const numbers = [5, 9, 1200, 410, 3000];
+// Sorting in descending order
+numbers.sort((a, b) => {
+  return b - a;
+});
+console.log(numbers);
+console.log("\n");
+// Sorting in ascending order
+numbers.sort((a, b) => a - b);
+console.log(numbers);
+console.log("\n");
+
 const products = [
-    {productId: 1, produceName: "p1",price: 300 },
-    {productId: 2, produceName: "p2",price: 3000 },
-    {productId: 3, produceName: "p3",price: 200 },
-    {productId: 4, produceName: "p4",price: 8000 },
-    {productId: 5, produceName: "p5",price: 500 },
-]
+  { productId: 1, produceName: "p1", price: 300 },
+  { productId: 2, produceName: "p2", price: 3000 },
+  { productId: 3, produceName: "p3", price: 200 },
+  { productId: 4, produceName: "p4", price: 8000 },
+  { productId: 5, produceName: "p5", price: 500 },
+];
 
-// lowToHigh
-const lowToHigh = products.slice(0).sort((a,b)=>{
-    return a.price-b.price
+// chaging in the origin array
+products.sort((a, b) => {
+  return a.price - b.price;
 });
+console.log(products);
 
-const highToLow = products.slice(0).sort((a,b)=>{
-    return b.price-a.price;
+// lowToHigh 
+// making a copy
+const lowToHigh = products.slice(0).sort((a, b) => {
+  return a.price - b.price;
 });
+console.log(lowToHigh);
+console.log("\n");
 
-
+const highToLow = products.slice(0).sort((a, b) => {
+  return b.price - a.price;
+});
+console.log(highToLow);
+console.log("\n");
 
 const users = [
-    {firstName: "harshit", age: 23},
-    {firstName: "mohit", age: 21},
-    {firstName: "nitish", age: 22},
-    {firstName: "garima", age: 20},
-]
+  { firstName: "harshit", age: 23 },
+  { firstName: "mohit", age: 21 },
+  { firstName: "nitish", age: 22 },
+  { firstName: "garima", age: 20 },
+];
 
-
-users.sort((a,b)=>{
-    if(a.firstName > b.firstName){
-        return 1;
-    }else{
-        return -1;
-    }
+users.sort((a, b) => {
+  if (a.firstName > b.firstName) {
+    return 1;
+  } else {
+    return -1;
+  }
 });
 
 console.log(users);
