@@ -8,4 +8,6 @@ const user1 = {
     }   
 }
 
+// arrow fuction dosent have "this"
+// arrow fuction takes "this" from its surrounding
 user1.about(user1);

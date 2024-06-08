@@ -1,14 +1,12 @@
-// compilation 
+// compilation
 // code execution
 
-// why compilation 
+// why compilation
 
+// How javascript code executes
 
-// How javascript code executes 
-
-
-// what is global exection context ? 
-// what is local execution context ? 
+// what is global exection context ?
+// what is local execution context ?
 // closures
 console.log(this);
 console.log(window);

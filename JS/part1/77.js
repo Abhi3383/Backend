@@ -18,8 +18,11 @@ function createUser(firstName, lastName, email, age, address){
     return user;
 }
 
+console.log(createUser());
 const user1 = createUser('harshit', 'vashsith', 'harshit@gmail.com', 19, "my address");
+console.log(createUser.user);
 console.log(user1);
 const is18 = user1.is18();
+console.log(is18);
 const about = user1.about();
 console.log(about);

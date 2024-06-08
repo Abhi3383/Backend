@@ -32,6 +32,6 @@ class Person{
 
 const person1 = new Person("harshit", "sharma", 8);
 // // console.log(person1.eat());
-// const info = Person.classInfo();
-// console.log(person1.desc);
-// console.log(info);
+const info = Person.classInfo();
+console.log(info);
+console.log(Person.desc);

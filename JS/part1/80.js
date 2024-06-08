@@ -3,22 +3,19 @@ const obj1 = {
     key2: "value2"
 }
 
-// __proto__
+// __proto__, in offical ecmascript documentation [[prototype]] is written
 
-// offical ecmascript documentation 
+// __proto__ , [[prototype]] they are same
 
-// [[prototype]]
+// prototype is different
 
-// __proto__ , [[prototype]]
-
-
-
-// prototype    
-
-const obj2 = Object.create(obj1); // {}
 // there is one more way to create empty object
+const obj2 = Object.create(obj1); // {}
 obj2.key3 = "value3";
-// obj2.key2 = "unique";
+obj2.key2 = "unique";
+console.log(obj2.key1);
+console.log(obj2.key2);
+console.log(obj2.key3);
 console.log(obj2);
 
 console.log(obj2.__proto__);

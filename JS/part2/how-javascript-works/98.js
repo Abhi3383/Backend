@@ -3,7 +3,6 @@
 // analyse : 70-80%
 // real example : 100%
 
-
 // function can return functions
 
 // function outerFunction(){
@@ -17,15 +16,14 @@
 // // console.log(ans);
 // ans();
 
-
-function printFullName(firstName, lastName){
-    function printName(){
-        console.log(firstName, lastName);
-    }
-    return printName;
+function printFullName(firstName, lastName) {
+  function printName() {
+    console.log(firstName, lastName);
+  }
+  return printName;
 }
 
 const ans = printFullName("harshit", "sharma");
-// console.log(ans);
+console.log(ans);
+console.log(ans());
 ans();
-
